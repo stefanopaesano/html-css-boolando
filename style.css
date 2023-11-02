@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.categorie {
+    background-color: orangered;
+    min-height: 50px;
+   
+}
+li{
+    display: inline-block;
+    margin-top: 15px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    width: 100%;
+    
+}
