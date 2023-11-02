@@ -5,6 +5,7 @@
 }
 .orange-nav{
     background-color: orangered;
+    padding: 10px 0;
 }
 
 .nav-bar > *{
@@ -15,6 +16,7 @@ select{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 10px 0;
 }
 
 
@@ -28,12 +30,31 @@ select{
     width: 100%;
 
 }
-li {
-    display: inline-block;
-    margin-top: 15px;
-    
-    
+
+.select > ul{
+    list-style: none;
 }
+.select > ul > li{
+    display: inline-block;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+main{
+    margin-top: 50px;
+}
+
+
+
+
+
+
 a{
     text-decoration: none;
     color: white;
@@ -61,10 +82,11 @@ color: white;
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    flex-wrap: wrap;
     
 }
 .card{
-    width: calc(100% / 3 );
+    width: calc((100% - 30px) / 3);
     margin-top: 50px;
     
 }
@@ -122,4 +144,12 @@ color: white;
 .riga-1 >.card:nth-child(2),.riga-1 .card:nth-child(5){
     margin-right:  15px;
     margin-left:  15px;
+}
+.main-section:hover .hidden{
+    display: block;
+
+}
+.main-section:hover .visual-img{
+    display: none;
+
 }
